@@ -152,7 +152,7 @@ export default {
         if (this.specialItems[4].active === false) {
           trash = ''
         }
-        if (this.selectedCoatingType === '') {
+        if (this.selectedRoomType === '') {
           roomType = ''
           roomSize = ''
           cleartype = ''
