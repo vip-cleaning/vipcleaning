@@ -12,7 +12,7 @@
           </div>
           <div class="text">
             <p class="card-title">Адрес</p>
-            <p class="card-descr">г.Липецк, ул Театральная площадь 1<br />офис №318а</p>
+            <p class="card-descr">г.Липецк, ул Театральная площадь 1<br />офис 1</p>
           </div>
         </div>
 
@@ -33,7 +33,7 @@
           </div>
           <div class="text">
             <p class="card-title">Телефон</p>
-            <p class="card-descr">+7-999-750-14-01</p>
+            <p class="card-descr">+7-920-510-99-34</p>
           </div>
         </div>
 
@@ -45,7 +45,7 @@
           </div>
           <div class="text">
             <p class="card-title">Email</p>
-            <p class="card-descr">vip-cleaning48@bk.ru</p>
+            <p class="card-descr">impire48@bk.ru</p>
           </div>
         </div>
 

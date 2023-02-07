@@ -46,6 +46,9 @@
             </div>
           </div>
           <div class="input-item">
+            <input type="file" ref="file" multiple>
+          </div>
+          <div class="input-item">
             <div class="title">Адрес</div>
             <div class="size">
               <input
@@ -53,7 +56,7 @@
                   class="size input-adress"
                   :class="$v.adress.$error ? 'is-invalid' : ''"
                   v-model.trim="adress"
-                  placeholder="г.Липецк, ул Театральная площадь 1 офис №318а"
+                  placeholder="г.Липецк, ул Театральная площадь 1 офис 1"
                   maxlength="71"
               >
               <p v-if="$v.adress.$dirty && !$v.adress.required" class="invalid-feedback">
@@ -199,6 +202,24 @@ export default {
 
         this.$http.post(`https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}&text=${msg}`)
         this.$http.post(`https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId2}&text=${msg}`)
+        let test = []
+        Object.values(this.$refs.file.files).forEach((item, index) => {
+          console.log(URL.createObjectURL(item))
+          console.log(item.name);
+          test.push({
+            type: 'photo',
+            media: "attach://" + item.name,
+            caption: "12312321"
+          })
+        })
+        let form = new FormData();
+
+        // form.append("photo", this.$refs.file.files[0]);
+        // form.append("caption", '12312312312')
+        console.log(test);
+        form.append("media", JSON.stringify(test))
+
+        this.$http.post(`https://api.telegram.org/bot${this.token}/sendMediaGroup?chat_id=${this.chatId2}`, form)
 
         this.closePopup()
 

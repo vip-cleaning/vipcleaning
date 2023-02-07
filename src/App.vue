@@ -13,7 +13,8 @@ export default {
 @import "./assets/scss/null";
 
 #app{
-  background-image: url("assets/temp/back.png");
+  background: #181818;
+  //background-image: url("assets/temp/back.png");
 }
 
 ::-webkit-scrollbar-track

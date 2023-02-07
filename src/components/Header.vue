@@ -2,7 +2,9 @@
   <header>
     <div class="container">
       <div class="content">
-        <router-link to="/" class="logo"><span>VIP</span>-cleaning</router-link>
+        <router-link to="/" class="logo">
+          <img :src="require('@/assets/temp/logo-main.jpg')" alt="">
+        </router-link>
         <nav>
           <a href="#/">УСЛУГИ</a>
           <a href="#/#">О НАС</a>
@@ -44,8 +46,8 @@ header{
     line-height: size(49, 1920);
     font-weight: bold;
     color: white;
-    span{
-      color: #F3CD00;
+    img{
+      width: 10rem;
     }
   }
 }

@@ -3,9 +3,9 @@
     <div class="container">
       <div class="content">
         <p class="about">
-          © 2021 «VIP-cleaning». <br />Клининговая компания
+          © 2023 «Империя». <br />Клининговая компания
           <br /> <br />
-          г.Липецк, ул Театральная площадь 1<br />офис №318а
+          г.Липецк, ул Театральная площадь 1<br />офис 1
         </p>
         <nav>
           <ul>
@@ -31,11 +31,6 @@
             </li>
           </ul>
         </nav>
-        <div class="contacts">
-          <p>vip-cleaning48@bk.ru</p>
-          <p>+7-999-750-14-01</p>
-          <p>vk.com/vipcleaning48</p>
-        </div>
       </div>
     </div>
   </footer>
